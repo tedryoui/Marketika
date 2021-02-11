@@ -6,7 +6,7 @@
 
 // Variables
 
-$base-width: 80%;
+$base-width: 100%;
 
 	//media sizes
 
@@ -93,7 +93,6 @@ section {
 
 		&-form {
 
-			margin: 0px 75px;
 			margin-top: 52px;
 			width: 100%;
 
@@ -169,7 +168,15 @@ section {
 		}
 
 		@media (max-width: $width-sm) {
-			margin-top: 160px;
+			margin-top: 85px;
+
+			&__title {
+				width: 90%;
+			}
+
+			&__description {
+				width: 90%;
+			}
 		}
 	}
 
@@ -256,10 +263,16 @@ section {
 			text-align: center;
 
 			&-inner {
+				align-items: center;
+
 				& + .video {
 					order: -1;
 					margin-bottom: 40px;
 					align-items: center;
+				}
+
+				&__description {
+					width: 70%;
 				}
 			}
 		}
