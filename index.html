@@ -5,6 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Marketica</title>
 	<link rel="stylesheet" href="css/main.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="js/send.js"></script>
 </head>
 <body>
 	<section class="header">
@@ -20,9 +22,9 @@
 					Very professional and highly customizable sketch template with lots, of custom pages and useful features
 				</div>
 				<div class="header-content-form">
-					<form>
-						<input type="text" placeholder="Your Name">
-						<input type="text" placeholder="Your Email">
+					<form enctype="multipart/form-data" method="post" id="form">
+						<input type="text" name="name" placeholder="Your Name">
+						<input type="text" name="email" placeholder="Your Email">
 						<button>Get Started</button>
 					</form>
 				</div>
